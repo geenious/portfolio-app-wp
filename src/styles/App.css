@@ -1,3 +1,96 @@
-body {
-  color: red;
+.container {
+  background-image: url('../images/anvil.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, .1);
+  text-align: center;
+}
+
+.company-nav {
+  float: left;
+  position: fixed;
+}
+
+.company-nav h3 {
+  font-family: 'Berkshire Swash';
+  color: #ddd;
+  font-size: 1.6em;
+  text-shadow: 3px 3px 5px black;
+  padding: 10px;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.6em;
+  text-shadow: 3px 3px 5px black;
+}
+
+.selected {
+  border-bottom: 2px solid #ddd;
+}
+
+.home-logo {
+  background-color: #ddd;
+  width: 30%;
+  margin: 50px auto;
+  padding: 40px 20px;
+}
+
+.home-logo h1 {
+  line-height: 1.6em;
+  font-size: 2.6em;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.about {
+  background-color: rgba(200, 200, 200, .5);
+  width: 960px;
+  margin: 5vh auto 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about p {
+  color: #000;
+}
+
+.cody-img {
+  float: left;
+  height: 200px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.bio p {
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  font-size: 1.3em;
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: rgba(30, 30, 30, .3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  text-align: left;
+}
+
+footer p {
+  line-height: 1.6em;
+  color: #999;
+  padding: 10px;
 }
