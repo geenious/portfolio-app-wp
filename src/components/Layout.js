@@ -14,22 +14,26 @@ export default class BaseLayout extends Component {
         </div>
           <ul>
             <li>
-              <NavLink activeClassName='selected' exact to='/'>Home</NavLink>
+              <NavLink activeClassName='selected' className='nav-link' exact to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink activeClassName='selected' to='/about'>About</NavLink>
+              <NavLink activeClassName='selected' className='nav-link' to='/about'>About</NavLink>
             </li>
             <li>
-              <NavLink activeClassName='selected' to='/contact'>Contact</NavLink>
+              <NavLink activeClassName='selected' className='nav-link' to='/work'>Works</NavLink>
             </li>
             <li>
-              <NavLink activeClassName='selected' to='/store'>Shop</NavLink>
+              <NavLink activeClassName='selected' className='nav-link' to='/store'>Shop</NavLink>
             </li>
           </ul>
         </nav>
         {this.props.children}
         <footer>
-          <p>Copyright 2017, Reckless Iron Works</p>
+          <p>
+            <span>&copy; 2017, Reckless Iron Works</span>
+            <a href='https://www.facebook.com/recklessironworks/' alt='Facebook'><i className="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href='https://www.instagram.com/recklessironworks/' alt='Instagram'><i className="fa fa-instagram" aria-hidden="true"></i></a>
+          </p>
         </footer>
       </div>
     )
